@@ -20,4 +20,4 @@ use Illuminate\Routing\Router;
 
 Route::get('/',[PageController::class,'index'])->name('home');
 Route::get('/films',[PageController::class,'film'])->name('film');
-Route::get('/scheda/{id}',[PageController::class,'scheda'])->name('scheda');
+Route::get('/scheda/{title}',[PageController::class,'scheda'])->name('scheda');

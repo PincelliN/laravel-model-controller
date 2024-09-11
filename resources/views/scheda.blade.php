@@ -10,8 +10,6 @@
             <li>Vote: {{ $film->vote }}</li>
             <li>Nazionalità: {{ $film->nationality }}</li>
         </ul>
-
-
     </div>
 @endsection
 

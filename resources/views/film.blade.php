@@ -14,7 +14,7 @@
                     @endif
                     <p class="card-text">Anno: {{ $movie_vote->date }}</p>
                     <p class="card-text">Voto: {{ $movie_vote->vote }}</p>
-                    <a href="{{ route('scheda', ['id' => $movie_vote->id]) }}" class="card-link btn btn-warning">Vai</a>
+                    <a href="{{ route('scheda', ['title' => $movie_vote->title]) }}" class="card-link btn btn-warning">Vai</a>
                 </div>
             </div>
         @endforeach

@@ -3,6 +3,8 @@
 
 
 @section('content')
+    {{--  @dump($titles); --}}
+    @dump($movies)
     <div class="container my-5">
         <h1>Lista film</h1>
 
