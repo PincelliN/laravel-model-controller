@@ -19,4 +19,12 @@ class PageController extends Controller
 
         return view('film',compact('movies_vote'));
     }
+
+    public function scheda($id){
+        $film=Movies::all();
+        @dd($id);
+
+        return view('scheda',compact('film'));
+
+    }
 }

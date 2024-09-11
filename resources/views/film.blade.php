@@ -12,7 +12,8 @@
                     <h6 class="card-subtitle mb-2 text-body-secondary">{{ $movie_vote->title }}</h6>
                     <p class="card-text">{{ $movie_vote->date }}</p>
                     <p class="card-text">{{ $movie_vote->vote }}</p>
-                    <a href="#" class="card-link btn btn-warning">Vai</a>
+                    <p class="card-text">{{ $movie_vote->id }}</p>
+                    <a href="{{ route('scheda', ['id' => $movie_vote->id]) }}" class="card-link btn btn-warning">Vai</a>
                 </div>
             </div>
         @endforeach
