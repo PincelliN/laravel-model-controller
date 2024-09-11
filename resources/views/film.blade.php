@@ -9,9 +9,11 @@
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">{{ $movie_vote->title }}</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">{{ $movie_vote->title }}</h6>
-                    <p class="card-text">{{ $movie_vote->date }}</p>
-                    <p class="card-text">{{ $movie_vote->vote }}</p>
+                    @if ($movie_vote->title != $movie_vote->original_title)
+                        <h6 class="card-subtitle mb-2 text-body-secondary">{{ $movie_vote->original_title }}</h6>
+                    @endif
+                    <p class="card-text">Anno: {{ $movie_vote->date }}</p>
+                    <p class="card-text">Voto: {{ $movie_vote->vote }}</p>
                     <a href="{{ route('scheda', ['id' => $movie_vote->id]) }}" class="card-link btn btn-warning">Vai</a>
                 </div>
             </div>
