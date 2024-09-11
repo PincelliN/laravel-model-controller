@@ -21,8 +21,8 @@ class PageController extends Controller
     }
 
     public function scheda($id){
-        $film=Movies::all();
-        @dd($id);
+        $film= Movies::find($id);
+
 
         return view('scheda',compact('film'));
 
